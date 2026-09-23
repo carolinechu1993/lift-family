@@ -1,5 +1,5 @@
 /* App-shell cache only. No Firebase/Google requests are intercepted or cached; cloud actions are explicit. */
-const CACHE='lift-family-shell-v1.10.0';
+const CACHE='lift-family-shell-v1.11.0';
 const SHELL=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./apple-touch-icon.png'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('lift-family-shell-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()));});

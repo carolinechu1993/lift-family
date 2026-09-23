@@ -1,17 +1,27 @@
 {
-  "id":"./",
-  "name":"LIFT 家庭健身手帳",
-  "short_name":"LIFT",
-  "description":"各自記錄，一起變好。你的私人健身紀錄與進步曲線。",
-  "lang":"zh-Hant",
-  "start_url":"./",
-  "scope":"./",
-  "display":"standalone",
-  "background_color":"#faf9f6",
-  "theme_color":"#faf9f6",
-  "prefer_related_applications":false,
-  "icons":[
-    {"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
-    {"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  "id": "./",
+  "name": "LIFT 個人健身手帳",
+  "short_name": "LIFT",
+  "description": "免登入，直接記錄自己的訓練、菜單與進步曲線。",
+  "lang": "zh-Hant",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf9f6",
+  "theme_color": "#faf9f6",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
